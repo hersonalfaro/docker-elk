@@ -14,3 +14,10 @@ discovery.zen.minimum_master_nodes: 1
 ## see https://www.elastic.co/guide/en/elasticsearch/reference/current/bootstrap-checks.html
 #
 discovery.type: single-node
+
+#### whitelist hosts
+reindex.remote.whitelist: 
+    - otherhost:9200
+    - cwow-pillars-dash-dev.davita.com:9200
+    - cwow-pillars-dash-dev.davita.com:443
+    - cwow-pillars-dash-dev.davita.com:443/app/kibana
